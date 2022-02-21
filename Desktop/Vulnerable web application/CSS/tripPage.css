@@ -1,0 +1,83 @@
+.font{
+	font-size:35px;
+	
+}
+.my_form_trips{
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    padding:7%;
+	margin:auto;
+    background-image: url(../img/page_trip/solo-travel.jpg);
+
+}
+*{
+ margin:auto;
+}
+
+li{
+	list-style:none;
+}
+.centered {
+text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  padding:1% 8%;
+  color: white;
+  filter: alpha(opacity=60);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my_sec_trip
+{
+	padding:2%;
+}	
+.my_img_trip{
+	border-radius:50%;
+	width:100%;
+}
+.my_img_trip:hover {
+	border:1px solid black;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.text_trip{
+width:160px;
+}
+.text_trip:hover{
+	background-color:lightblue;
+}
+
+.lb{
+	width:80px;
+}
+
+.div_form{
+	margin-right:25%;
+	overflow: auto;
+	margin-bottom:2%;
+
+}
+.number_trip{
+width:40px;
+}
+
+fieldset{
+width:50%;
+}
+.trip
+{
+	margin:5%;	
+}
+.underLime
+{
+	 text-decoration: underline;
+}
+@media only screen and (max-width: 600px)
+{
+    .my_sec_trip
+    {
+        display:none;
+    }
+    }
+

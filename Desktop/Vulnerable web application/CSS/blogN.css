@@ -1,0 +1,77 @@
+summary
+{
+font-size:25px;
+}
+
+.section_trip{
+	padding-right:4%;
+	padding-left:4%;
+}
+details{
+ padding-right: 2% ; 
+  padding-left: 2% ;   
+
+}
+
+.my_img_trip{
+	width:100%;
+	border-bottom:2px solid grey;
+}
+
+*{
+	margin:auto;
+	text-align:center;
+}
+
+.form1{
+	background-image: url('../img/blog/background/b11.jpg');
+	padding:3%;	 
+    width: 50%;
+	overflow:auto;
+	border:1px solid lightgrey;
+	margin:auto;
+	margin-bottom:1%;
+}
+
+.form1 p{
+	margin:0 0 2%;
+}
+.my_h2Blog{
+	background-color:#fde7da;
+	margin:1% 4% 2% 4%;
+	padding:2%;
+	color:grey;
+}
+.slidecontainer{
+  width: 20%;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+/* Content */
+.content {
+  margin:2%;
+  height:auto;
+  border:1px solid lightgrey;
+}
+.content:hover{
+	  border:1px solid grey;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+.form1{
+	width: 95%;
+}
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+

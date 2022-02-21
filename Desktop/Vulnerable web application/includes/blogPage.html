@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+
+<html dir= "rtl" lang=he>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../CSS/project.css" />
+<link rel="stylesheet" type="text/css" href="../CSS/blogN.css" />
+<script src="../JS/blog.js"></script>
+<script src="../JS/project.js"></script>
+
+<title>
+O.C.O עמוד הבלוגים שלנו
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Secular+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<style>
+body{
+    font-family:'Secular One', sans-serif;
+}
+</style>
+
+<!-- NEW 0906 -->	
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+<script>
+$(document).ready(function() 
+{ 
+ $('form').ajaxForm(function() 
+ {
+  alert("Uploaded SuccessFully");
+ }); 
+});
+
+function preview_image() 
+{
+ var total_file=document.getElementById("upload_file").files.length;
+ for(var i=0;i<total_file;i++)
+ {
+  $('#image_preview').append("<img src='"+URL.createObjectURL(event.target.files[i])+"'><br>");
+ }
+}
+</script>
+
+<!-- NEW 0906 -->	
+
+
+</head>
+
+<?php
+session_start();
+
+if (isset($_SESSION['username'])) {
+} else {
+    header("Location:./login.php");
+}
+
+?>
+
+<!-- body -->
+<body>
+<!-- header -->
+<header>
+<!-- nav -->
+<nav class="topnav" id="myTopnav">
+<img class="logo float_left" src="../img/logo/logo.jpg" height="52" width="120">
+  <a href="../index.html" class="active">דף הבית</a>
+  <a href="tripPage.html">טיולים</a>
+  <a href="tips.html">טיפים</a>
+  <a href="blogPage.html">בלוגים</a>
+  <a href="our_recommend.html">המומלצים שלנו</a>
+  <a class="no" href="#" title="לא פעיל">גלריה</a>
+    <a href="../includes/register/login.php">התחברות</a>
+  <a href="../includes/register/register.php">הרשמה</a>
+  <a href="mycomments.php">השארת תגובה</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="Menu()">&#9776;</a> 
+</nav>
+<!-- nav -->
+</header>
+<!-- header -->
+
+<!-- main -->
+<main>
+<h1 class="my_h_project">המטיילים שלנו משתפים</h1>
+<h4> כאן תוכלו לקבל טעימה קטנה מחוויה גדולה !</h4>
+<a href="#" onclick="window.alert('כפתור הדמיה, אין תפריט נגישות');"><img src="../img/Accessibility/Accessibility.jpg" title="גלישה נגישה" id="accessability"></a>
+
+<section class="section_trip ">	
+<!-- Portfolio Gallery Grid -->
+<!--COL1-->
+<div class="column float_left">
+<!--1-->
+<div class="content">
+<a href="../img/blog/hermon/Har.jpg" target="_blank"  title="לצפייה בתמונה לחץ כאן"><img class="my_img_trip" src="../img/blog/hermon/Har.jpg" alt="Mountains" height="290" width="42"></a>
+<details>
+<summary> טיול משפחתי בהר החרמון
+<h5>תאריך הטיול: 15/01/19</h5> </summary>
+<p>
+החרמון לא מיועד רק לסקי כמובן, ומהווה בילוי משפחתי כבר שנים רבות. 
+<br>
+כל המשפחה יכולה לעלות או לרדת ברכבל שצופה על הנוף הלבן.
+<br>
+אטרקציה נוספת באתר היא מזחלות האקסטרים שנמצאות על מסלול מיוחד, עליו הן דוהרות במהירות של 45 קמ"ש. 
+הטיול שלנו התחיל במתחם הקבלה באתר החרמון, קיבלה את פנינו מנהלת המקום, הסבירה על המתקנים הקיימים במתחם.
+את מסלול הטיול, המלצות טיפים ועוד לקחנו מאתר O.C.O !
+חוויה מגבשת לכל המשפחה!
+<br>
+<a href="tripPage.html#zafon" title="לפרטים נוספים אודות המסלול והזמנה">  לפרטים נוספים והזמנה ! </a>
+</p>
+</details>
+</div>
+<!--2-->
+<div class="content">
+<a href="../img/trips/mahne.jpg" target="_blank" title="לצפייה בתמונה לחץ כאן"><img class="my_img_trip" src="../img/trips/mahne.jpg" height="290" width="42"></a>
+<details>
+<summary> סיור קולינרי בשוק מחנה יהודה בירושלים
+<h5>תאריך טיול: 15/03/19</h5> </summary>
+<p> כשאתם מתכננים טיול בחו"ל, חלק גדול מהתוכניות יהיה בדרך כלל מבוסס על המסעדות ובתי הקפה בהם תבקרו – הרי אין דרך טובה יותר להכיר עיר, מאשר במאכלים המקומיים שהיא מציעה, בקונדיטוריות המומלצות, במסעדות המיוחדות, בשווקים ובמאפיות.
+<br>
+<br>
+אז גם ישראל, מדינתנו הקטנה, לא נופלת מדינות אחרות בתחום הקולינארי ואף להפך מכך. יצאנו לסיור קולינרי ביחד עם המדריך שלמה מאיר מ O.C.O היה טיול מרגש מגבש וחוויותי!
+<br>
+ישראל היא סוג של קיבוץ גלויות, המרכז מאכלי עדות רבים ומגוונים, מסעדות קטנות וותיקות עם מאכלים שכולם אוהבים לצד מסעדות חדשות, חדשניות וטרנדיות, שחלק מהן, כבר פתחו סניפים נוספים בערים גדולות בעולם.
+<br>
+מהסיבה הזאת, זה ודאי לא יפתיע אתכם לשמוע שהרמת הפופולריות של תחום של תיירות קולינרית בישראל, נמצאת במגמת עליה ויותר ויותר אנשים גם מקומיים וגם מחו"ל מבקשים להכיר מקרוב וליהנות מכל מה שיש לעולם הקולינריה של ישראל להציע – ויש המון.
+
+<br>
+<a href="tripPage.html#merkaz" title="לפרטים נוספים אודות המסלול והזמנה">  לפרטים נוספים והזמנה ! </a>
+</p>
+</details>
+</div>
+</div>
+<!--COL1-->
+
+<!--COL2-->
+<div class="column float_left">
+<!--1-->
+<div class="content">
+<a href="../img/blog/dor/dor1.jpg" target="_blank" title="לצפייה בתמונה לחץ כאן">
+<img class="my_img_trip" src="../img/blog/dor/dor1.jpg" alt="Nature" height="290" width="42"></a>
+<details>
+<summary> חוף דור
+<h5>תאריך הטיול: 15/03/19</h5> </summary>
+<p>אני ובת זוגתי לקחנו מהאתר של O.C.O. מסלול מובנה ל"חוף דור". המסלול המעגליחולף ברצועת החוף הסלעי המפורצת ביותר בארץ. 
+<br>
+המסלול שעשינו כלל כמה מהאטרקציות הייחודיות למקום: "המערה הכחולה" – מערה שנוצרה לאורך שנים רבות בעקבות תהליכי כרסום, המסה והתמוטטות.
+<br> המערה קיבלה את שמה בזכות גווניה הכחולים, ויופייה מושך מבקרים רבים. "מפרץ הצדפים" הוא מפרצון המרופד בשכבה עבה של צדפים שמצאו דרכם אל החוף, ו"הספינה הטבועה" – שרידי ספינה שהובילה מלט ועלתה על שרטון סמוך לחוף. 
+<br>
+עדות לפעולת האדם נמצא בשרשרת בארות עתיקות שנחצבו כאן כדי להגיע אל מפלס מי התהום, הסמוך למדיי לפני השטח. 
+<br>
+גם שרידי תעלות וברכות שנותרו מתעשיית דגי ים למאכל, מלווים את המסלול, וכן מחצבת כורכר עתיקה וגדולה ו"מערת קליאופטרה" – ברכה שחצב האדם, אך עברה תהליך בלייה טבעי בעזרת גלי הים. המים מגיעים לברכה זו במעבר תת-קרקעי מתחת לסלע. 
+<br>
+<br>
+על פי האגדה קלאופטרה התפעלה מיופייה הקסום של הברכה, ואף טבלה בה, ובעשותה כך, העניקה לה את שמה. ממזרח לרכס הכורכר נמצאת "המרזבה" – עמק שטוח שצורתו מזכירה מרזב, והוא מנקז אליו מי גשמים ונחלים. 
+<br>
+בשל התנאים הטופוגרפיים והגאולוגיים של השטח שטחי המרזבה מוצפים לעתים בחורף, ובסוף החורף אפשר ליהנות כאן מפריחת צבעוני ההרים, הבולט בנוף באדום לוהט.
+<br>
+
+<a href="tripPage.html#zafon" title="לפרטים נוספים אודות המסלול והזמנה">  לפרטים נוספים והזמנה ! </a>
+</p>
+</details>
+</div>
+<!--2-->
+<div class="content">
+<a href="../img/blog/meara/net.jpg" target="_blank" title="לצפייה בתמונה לחץ כאן">
+<img class="my_img_trip" src="../img/blog/meara/net.jpg" alt="Mountains" height="290" width="42" ></a>
+<details>
+<summary> סנפלינג במערת הנטיפים שבגליל העליון
+<h5>תאריך הטיול: 05/07/19</h5> </summary>
+<p>
+אני וחברי הילדות שלי יצאנו לטיול סנפלינג במערת נטיפים היפה ביותר בארץ! הטיול היהבליווי המדריך המקצועי של O.C.O. (רביד מנשה)
+זוהי מערה ייחודית ולא מוכרת בגליל. מקום משגע ביופיו ומדהים במיוחדותו. חוויה ייחודית! מתאים גם למתחילים לקבוצות ולמשפחות! 
+<br>
+<br>
+
+נקודת האיסוף שלנו הייתה בעיר הולדתי, חולון, המדריך נכח באוטובוס וקיבל את פנינו בשמחה רבה.
+<br>
+
+הנסיעה עברה בצורה חלקה וכללה הסברים מפורטים של המדריך על הדרך ועל מקומות היסטוריים בצפון.
+<br>
+
+הביקור במערה היה בערך כחצי יום וכלל מקטעי סנפלינג.
+<br>
+
+<a href="tripPage.html#zafon" title="לפרטים נוספים אודות המסלול והזמנה">  לפרטים נוספים והזמנה ! </a>
+</p>
+</details>
+</div> 
+</div>
+<!--COL2-->
+</section>
+<!-- END GRID -->
+		
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+  <h3 class="my_h2Blog "> טיילתם איתנו? מוזמנים לכתוב מטה את החוויה שלכם ונדאג לשתף אותה בקרוב בעמוד!</h3></section>	
+
+
+<form  class="form1" action="blog.php" method="POST" name="BlogForm" onsubmit="return ValidateBlogForm();" enctype="multipart/form-data"/>
+<p> <label for="name" >שם מלא: </label> <input id="name" name="name" type="text" style="text-align:right;" required>* </p> 
+<br>	
+<p><b> * תוכן הטיול:</b></p>
+<textarea id="textArea" style="text-align:right" name="comment" cols="44" rows="5"></textarea>
+<p>להעלאת תמונה :</p>
+<div id="wrapper">
+  <input type="file" style="margin-right:40%; margin-bottom:5%"  id="upload_file" name="upload_file[]" onchange="preview_image();" enctype="multipart/form-data"/>
+  <br>
+  <input type="submit" name='submit_image' value="שלח"/>
+ <div id="image_preview"></div>
+</div>
+
+<!-- NEW 0906 -->	
+
+</form>
+
+</main>
+
+</body>
+<!-- body -->
+
+<!-- Footer -->
+<footer class="footer">
+ <!--/.container--> 
+        <div class="container">
+		   <!--/.row--> 
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-4">
+                    <h1> O.C.O - manage your trip </h1>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <h5 style="margin-right:10%"> צור קשר </h5>
+                    <ul>
+                        <li><a class="email" href="mailto: o.c.o@gmail.com "> o.c.o@gmail.com </a></li>
+                        <br>
+                        <li> <p> כתובת המשרד: שינקין 49, ת"א </p> </li>
+                     </ul>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <ul>
+                        <li> <h5 class="my_h5_footer"><a href="#" class="no" title=" לא פעיל"> תקנון האתר</a> </h5></li>
+                        <li> <h5 class="my_h5_footer"><a href="#" class="no" title=" לא פעיל"> דרושים</a> </h5></li>
+						<li> <h5><a href="https://chat.whatsapp.com/In4v4McQ6ot800SMXDtz1d" title="צור קשר עם מטיילים נוספים">קבוצת המטיילים שלנו בווצאפ </a>  </h5></li>
+                    </ul>
+                </div>         
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>               
+<!-- Copyright -->	
+ <div class="footer-bottom">
+    <div class="container">
+    <p> This site was built and designed by Or | Carmit | Orel ©</p>      
+    </div>
+</div>
+<!-- Copyright -->	
+</footer>

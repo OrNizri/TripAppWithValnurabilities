@@ -1,0 +1,138 @@
+<!DOCTYPE html >
+
+<html dir= "rtl" lang=he>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="../CSS/Recommended.css" />
+<link rel="stylesheet" type="text/css" href="../CSS/project.css" />
+
+<script src="../JS/project.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<title>
+O.C.O הטיולים המומלצים שלנו</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Secular+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+
+<style>
+body
+{
+   font-family:'Secular One', sans-serif;
+}
+</style>
+</head>
+
+<body>
+<!-- header -->
+<header>
+<!-- nav -->
+<nav class="topnav" id="myTopnav">
+<img class="logo float_left" src="../img/logo/logo.jpg" height="52" width="120">
+  <a href="../index.html" class="active">דף הבית</a>
+  <a href="tripPage.html">טיולים</a>
+  <a href="tips.html">טיפים</a>
+  <a href="blogPage.html">בלוגים</a>
+  <a href="our_recommend2.php">המומלצים שלנו</a>
+  <a href="#" class="no" title="לא פעיל">גלריה</a>
+    <a href="../includes/register/login.php">התחברות</a>
+  <a href="../includes/register/register.php">הרשמה</a>
+  <a href="mycomments.php">השארת תגובה</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="Menu()">&#9776;</a> 
+</nav>
+<!-- nav -->
+</header>
+<!-- header -->
+<main >
+    
+<section class="section_r">
+<h1 class="my_h">הטיולים המומלצים שלנו !</h1>
+<h4 class="my_h" id="my_h3_r">כדי שתוכל לצפות בסרטון, הזז את הקוביות..</h4>
+<div class="video-container">
+<video width=100% autoplay loop muted>
+<source src="../video/israel.mp4" type="video/mp4">
+</video>
+</div>
+<a href="tripPage.html#merkaz" title="לחץ כאן כדי לצפות במסלול "><div class="boxs ui-widget-content" id="my_box"><h2 class="my_h2_r2">סיור קולינרי במחנה יהודה שבירושלים</h2></div></a>
+<a href="tripPage.html#darom" title="לחץ כאן כדי לצפות במסלול"><div class="boxs ui-widget-content" id="my_box2"><h2 class="my_h2_r2">טיול עוצר נשימה במצדה הצבעונית</h2> </div></a>
+<a href="tripPage.html#darom" title="לחץ כאן כדי לצפות במסלול" ><div class="boxs ui-widget-content" id="my_box3"><h2 class="my_h2_r2">ביקור בים המלח המקום הנמוך בעולם</h2></div></a>
+</section>
+
+<section class="my_sec_r">
+<h1 class=" col-md-12 col-s-12 col-xs-12 my_h_project" style="padding:3%">הטיולים המומלצים שלנו !</h1>
+<a href="tripPage.html#merkaz" title="לחץ כאן כדי לצפות במסלול"><div class="col-md-12 col-s-12 col-xs-12 box_2" id="mahne"><h2 class="my_h2_r2 my_h_project">סיור קולינרי במחנה יהודה</h2></div></a>
+<a href="tripPage.html#darom" title="לחץ כאן כדי לצפות במסלול"><div class="col-md-12 col-s-12 col-xs-12 box_2" id="dead_sea"><h2 class="my_h2_r2 my_h_project">ביקור בים המלח המקום הנמוך בעולם</h2></div></a>
+<a href="tripPage.html#darom" title="לחץ כאן כדי לצפות במסלול"  ><div class="col-md-12 col-s-12 col-xs-12 box_2" id="mezada"><h2 class="my_h2_r2 my_h_project">טיול עוצר נשימה במצדה הצבעונית</h2></div></a>
+</section>
+
+<section class="bo">
+<form  action="mailto:o.c.o@gmail.com" method="GET" name="our_reccomended">
+<img src="../img/recommend/logo.jpeg" height="50" width="53" class="my_logo_r">
+<h2>הרשם והשאר מחובר</h2> 
+<fieldset>
+<h5><b>לקבלת מידע ועדכונים שוטפים על המומלצים שלנו</b></h5>    
+כתובת מייל: <input type="email" name="email" required title="הכנס כתובת מייל  חוקית" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"
+> <br>
+<br>
+<input type="checkbox" name="approval" value="approval" required> אני מאשר/ת קבלת מידע ועדכונים באמצעות דוא"ל<br>
+<br>
+<input type="submit" value="הרשם" name="submit">
+</fieldset>
+</form>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+ <!--/.container--> 
+        <div class="container">
+		   <!--/.row--> 
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-4">
+                    <h1> O.C.O - manage your trip </h1>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <h5 style="margin-right:10%"> צור קשר </h5>
+                    <ul>
+                        <li><a class="email" href="mailto: o.c.o@gmail.com "> o.c.o@gmail.com </a></li>
+                        <br>
+                        <li> <p> כתובת המשרד: שינקין 49, ת"א </p> </li>
+                     </ul>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <ul>
+                        <li> <h5 class="my_h5_footer"><a href="#" class="no" title=" לא פעיל"> תקנון האתר</a> </h5></li>
+                        <li> <h5 class="my_h5_footer"><a href="#" class="no" title=" לא פעיל"> דרושים</a> </h5></li>
+						<li> <h5><a href="https://chat.whatsapp.com/In4v4McQ6ot800SMXDtz1d" target="_blank"  title="צור קשר עם מטיילים נוספים">קבוצת המטיילים שלנו בווצאפ </a>  </h5></li>
+                    </ul>
+                </div>         
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>               
+<!-- Copyright -->	
+ <div class="footer-bottom">
+    <div class="container">
+    <p> This site was built and designed by Or | Carmit | Orel ©</p>      
+    </div>
+</div>
+<!-- Copyright -->	
+</footer>
+<!-- Footer -->
+
+<script>
+  $( function() {
+    $( "#my_box" ).draggable();
+	$("#my_box2" ).draggable();
+    $( "#my_box3" ).draggable();
+  } );
+</script>
+
+</body>
+</html>

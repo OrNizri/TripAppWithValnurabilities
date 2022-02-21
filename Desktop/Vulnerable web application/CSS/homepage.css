@@ -1,0 +1,82 @@
+.section
+{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+}
+.font_h{
+color:grey;
+font-size:15px;}
+
+ .my_border{
+	 background-color:black;
+	 border: 1px solid white;
+ }
+.my_img {
+  border-radius: 50%;
+}
+
+.my_aside{
+	margin:3% 0 0 0;
+	text-align:center;
+	padding-bottom:4.7%;
+}
+.recommend{ 
+	  overflow: auto;
+}.recommend:hover{border-color:#3F51B5;}
+
+
+.on_us{
+	border-left:1px solid lightgrey;
+	padding-bottom:2%;
+	text-align:center;
+	margin:3% 0 0 0;
+}
+
+.my_sec_homepage{
+    padding-right:0.5%;
+    padding-left:0.5%;
+	margin-top:1%;
+}
+.margin-top{
+ margin-top:1.3%;  
+}
+
+#my_h2_1{
+color:black;
+border:2px dotted grey;	
+margin:0;
+text-align:center;
+padding:5%;
+display:none;
+}
+
+#my_h2{
+	position:absolute;
+	text-align:center;
+	background:white;
+	padding:0 0.7em 0.7em 0.7em;
+	margin:0;
+	opacity:0.7;
+	z-index:1;
+}
+
+#my_h2_2 {
+  color: white;
+  text-align:center;
+ }
+ 
+@media only screen and (max-width: 600px)
+{
+   #my_h2_1{
+	display:block;}
+  
+  .my_border, .my_aside,.my_aside,.section {
+   display: none;
+  }
+}
+  @media only screen and (max-width: 240px) {
+	.my_img{display:none;}  
+  }

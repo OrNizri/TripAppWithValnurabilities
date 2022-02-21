@@ -1,0 +1,185 @@
+.float_left{
+float:left;
+}
+.float_right{
+float:right;
+}
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary:before {
+  color:#1685d6;
+  content: " +";
+}
+details[open] summary:before {
+  content: " -";
+}
+
+
+.my_h_project{
+	margin-top:0;
+	padding:1%;
+	font-size:40px;
+	text-align:center;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	margin-bottom:1%;
+}
+.center{
+    text-align:center;
+}
+body{
+overflow:auto;
+}
+
+.clear{
+	clear:both;
+}
+
+ .topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color:#226cb1;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.no{
+cursor: not-allowed;}
+
+.footer {
+	width:100%;
+	background: black;
+	height: auto;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	overflow:auto;
+}
+.footer ul{
+list-style-type: none;	
+}
+.footer a{
+	color:white;
+}
+.footer h1{
+font-family: 'Cookie', cursive;
+font-weight: bold;
+}
+
+.email{
+  border-bottom: 3px solid white;
+}
+
+.footer-bottom {
+  border-top: 1px solid white;
+}
+.footer-bottom p {
+margin-top:1%;
+text-align:center;
+font-weight: normal;	
+}
+.logo{
+	margin-right:0.2%;
+}
+
+ #accessability{
+      height:35px;
+      width:35px;
+      position:fixed;
+	  z-index:2;
+      border-radius:20%;
+      right:0;
+      top:150px;
+      }
+.container1 {
+  position: relative;
+  width:50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width:100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  text-align:center;
+  font-size: 20px;
+  padding: 3px 3px;
+}
+
+.video-container{
+	width:100%;	
+}
+
+ @media only screen and (max-width: 600px)
+{
+  .my_h5_footer,.footer h1 {
+   display: none;
+  }
+ }
+
+@media only screen and (max-width: 710px) {
+.topnav a:not(:first-child) {
+   display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+   .topnav.responsive {position: relative;}
+  .topnav.responsive.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+}

@@ -1,0 +1,105 @@
+.my_h{
+  text-shadow: 3px 3px 3px black, 0 0 35px black, 0 0 8px black;
+  color: white;
+  filter: alpha(opacity=60);
+  position: absolute;
+  top: 42px;
+  left:33.333%;
+  transform: translate(-10%, -10%);
+  z-index:1;
+  margin:3%;
+  text-align:center;
+}
+
+#my_h3_r{
+margin:8% 5% 5% 5%;
+}
+
+
+.bo 
+{
+  background-image: url("../img/recommend/carrr.jpeg");
+  width:550px;
+  border: 5px solid black;
+  padding:1% 3% 2% 3%;
+  margin: auto;
+  text-align:center;
+  margin-top:3%;
+  margin-bottom:3%;
+}
+
+#my_box{
+  left:5%;
+  }
+  
+.my_h2_r2{
+	text-align:center;
+	padding:10%;
+}
+.my_sec_r{
+	display:none;
+}
+.box_2{
+  border: 2px solid black;
+  padding:20%;
+  margin: auto;
+}
+
+.boxs{
+  top:200px;
+  height:220px;
+  filter: alpha(opacity=60);
+  position: absolute;
+  background-color:white;
+  opacity:0.6;
+  transform: translate(-10%, -10%);
+  z-index:1;
+  width:30%;
+}.boxs:hover{
+     border:2px solid blue;   
+}
+.box_2:hover{
+     border:2px solid lightblue;   
+}
+
+#my_box2{
+  left:38%;
+}
+#my_box3{
+  left:70%;
+  }
+.section_r
+{
+	width:100%;
+	display:flex;
+	overflow:hidden;
+}
+
+.my_logo_r{
+	border-radius:50%;
+}
+
+#mahne{
+		background-image:url("../img/trips/mahne.jpg");
+}
+
+#mezada{
+		background-image:url("../img/trips/img_trip_7.jpg");	
+}
+
+#dead_sea{
+	background-image:url("../img/trips/img_trip_4.jpg");
+}
+
+@media only screen and (max-width: 700px)
+{
+	.bo{
+		display:none;
+	}
+	.my_sec_r{
+		   display: block;
+	}
+  .section_r{
+   display: none;
+  }
+}

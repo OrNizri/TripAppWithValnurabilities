@@ -1,0 +1,86 @@
+.sec_tips{
+	padding:3%;
+}
+
+table, th,tr, td {
+border: 1px solid white;
+font-size:13px;
+}
+
+th{
+background-color:#FFDCBC;	
+}
+
+td{
+	background-color:#FFF4EB;
+}
+.margin{
+	margin:1%;
+}	
+.my_img_app{
+	border-radius:30%;
+	margin:2%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	text-align:center;
+    position: relative;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	overflow: auto; 
+}
+.camera{
+	background-image:url('../img/tips/sunset/israel.jpg');
+	color:white;
+}
+.c_2,.my_sub,.my_a{
+	margin:4%;
+	display:none;
+}
+.my_sub{
+background-color:#FFDCBC;	
+}
+
+/* The Close Button */
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+.my_m{
+    background-color:lightblue;	
+}
+@media screen and (max-width: 600px) {
+	.modal-content{
+		width:100%;
+	}
+	.c_2,.my_sub,.my_a{
+		display:block;
+	}
+	.c_1,.table,.modal-content iframe{
+		display:none;
+	}
+}
+
